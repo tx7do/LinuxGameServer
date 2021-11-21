@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{e78b1ee7-db32-4698-a4c1-b97f7d55c37c}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>LinuxGameServer</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WSL2_1_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>
+    </IncludePath>
+    <RemoteCopySourceMethod>rsync</RemoteCopySourceMethod>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="Base\Ascii.cpp" />
+    <ClCompile Include="Base\BaseException.cpp" />
+    <ClCompile Include="Base\Bugcheck.cpp" />
+    <ClCompile Include="Base\DateTime.cpp" />
+    <ClCompile Include="Base\DateTimeFormat.cpp" />
+    <ClCompile Include="Base\DateTimeFormatter.cpp" />
+    <ClCompile Include="Base\Debugger.cpp" />
+    <ClCompile Include="Base\Error.cpp" />
+    <ClCompile Include="Base\ErrorHandler.cpp" />
+    <ClCompile Include="Base\Format.cpp" />
+    <ClCompile Include="Base\LocalDateTime.cpp" />
+    <ClCompile Include="Base\NumberFormatter.cpp" />
+    <ClCompile Include="Base\NumberParser.cpp" />
+    <ClCompile Include="Base\NumericString.cpp" />
+    <ClCompile Include="Base\RefCountedObject.cpp" />
+    <ClCompile Include="Base\StringTokenizer.cpp" />
+    <ClCompile Include="Base\Timespan.cpp" />
+    <ClCompile Include="Base\Timestamp.cpp" />
+    <ClCompile Include="Logger\Logger.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OSWrapper\DirectoryIterator.cpp" />
+    <ClCompile Include="OSWrapper\Event.cpp" />
+    <ClCompile Include="OSWrapper\File.cpp" />
+    <ClCompile Include="OSWrapper\FPEnvironment.cpp" />
+    <ClCompile Include="OSWrapper\Path.cpp" />
+    <ClCompile Include="OSWrapper\Pipe.cpp" />
+    <ClCompile Include="OSWrapper\Process.cpp" />
+    <ClCompile Include="OSWrapper\SharedMemory.cpp" />
+    <ClCompile Include="OSWrapper\Thread.cpp" />
+    <ClCompile Include="OSWrapper\ThreadLocal.cpp" />
+    <ClCompile Include="OSWrapper\Timezone.cpp" />
+    <ClCompile Include="ServerFrame\Application.cpp" />
+    <ClCompile Include="ServerFrame\Configuration.cpp" />
+    <ClCompile Include="ServerFrame\Option.cpp" />
+    <ClCompile Include="ServerFrame\OptionManager.cpp" />
+    <ClCompile Include="ServerFrame\OptionProcessor.cpp" />
+    <ClCompile Include="ServerFrame\ServerApplication.cpp" />
+    <ClCompile Include="ServerFrame\Subsystem.cpp" />
+    <ClCompile Include="ServerTimer\AsioServerTimer.cpp" />
+    <ClCompile Include="ServerTimer\EpollfdServerTimer.cpp" />
+    <ClCompile Include="ServerTimer\LibeventServerTimer.cpp" />
+    <ClCompile Include="ServerTimer\ServerTimerCreator.cpp" />
+    <ClCompile Include="ServerTimer\SleepServerTimer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base\Any.h" />
+    <ClInclude Include="Base\Ascii.h" />
+    <ClInclude Include="Base\AutoPtr.h" />
+    <ClInclude Include="Base\BaseException.h" />
+    <ClInclude Include="Base\Buffer.h" />
+    <ClInclude Include="Base\Bugcheck.h" />
+    <ClInclude Include="Base\DateTime.h" />
+    <ClInclude Include="Base\DateTimeFormat.h" />
+    <ClInclude Include="Base\DateTimeFormatter.h" />
+    <ClInclude Include="Base\Debugger.h" />
+    <ClInclude Include="Base\Error.h" />
+    <ClInclude Include="Base\ErrorHandler.h" />
+    <ClInclude Include="Base\Format.h" />
+    <ClInclude Include="Base\LocalDateTime.h" />
+    <ClInclude Include="Base\MetaProgramming.h" />
+    <ClInclude Include="Base\NumberFormatter.h" />
+    <ClInclude Include="Base\NumberParser.h" />
+    <ClInclude Include="Base\NumericString.h" />
+    <ClInclude Include="Base\Platform.h" />
+    <ClInclude Include="Base\RefCountedObject.h" />
+    <ClInclude Include="Base\SharedPtr.h" />
+    <ClInclude Include="Base\SingletonHolder.h" />
+    <ClInclude Include="Base\StringTokenizer.h" />
+    <ClInclude Include="Base\Timespan.h" />
+    <ClInclude Include="Base\Timestamp.h" />
+    <ClInclude Include="Base\TString.h" />
+    <ClInclude Include="Base\Types.h" />
+    <ClInclude Include="Base\v8\bignum-dtoa.h" />
+    <ClInclude Include="Base\v8\bignum.h" />
+    <ClInclude Include="Base\v8\cached-powers.h" />
+    <ClInclude Include="Base\v8\diy-fp.h" />
+    <ClInclude Include="Base\v8\double-conversion.h" />
+    <ClInclude Include="Base\v8\fast-dtoa.h" />
+    <ClInclude Include="Base\v8\fixed-dtoa.h" />
+    <ClInclude Include="Base\v8\ieee.h" />
+    <ClInclude Include="Base\v8\strtod.h" />
+    <ClInclude Include="Base\v8\utils.h" />
+    <ClInclude Include="Logger\ILogger.h" />
+    <ClInclude Include="Logger\Logger.h" />
+    <ClInclude Include="OSWrapper\DirectoryIterator.h" />
+    <ClInclude Include="OSWrapper\Event.h" />
+    <ClInclude Include="OSWrapper\File.h" />
+    <ClInclude Include="OSWrapper\FPEnvironment.h" />
+    <ClInclude Include="OSWrapper\Path.h" />
+    <ClInclude Include="OSWrapper\Pipe.h" />
+    <ClInclude Include="OSWrapper\Process.h" />
+    <ClInclude Include="OSWrapper\Runnable.h" />
+    <ClInclude Include="OSWrapper\RunnableAdapter.h" />
+    <ClInclude Include="OSWrapper\SharedMemory.h" />
+    <ClInclude Include="OSWrapper\Thread.h" />
+    <ClInclude Include="OSWrapper\ThreadLocal.h" />
+    <ClInclude Include="OSWrapper\Timezone.h" />
+    <ClInclude Include="ServerFrame\Application.h" />
+    <ClInclude Include="ServerFrame\Configuration.h" />
+    <ClInclude Include="ServerFrame\Option.h" />
+    <ClInclude Include="ServerFrame\OptionManager.h" />
+    <ClInclude Include="ServerFrame\OptionProcessor.h" />
+    <ClInclude Include="ServerFrame\ServerApplication.h" />
+    <ClInclude Include="ServerFrame\Subsystem.h" />
+    <ClInclude Include="ServerTimer\AsioServerTimer.h" />
+    <ClInclude Include="ServerTimer\EpollfdServerTimer.h" />
+    <ClInclude Include="ServerTimer\IServerTimer.h" />
+    <ClInclude Include="ServerTimer\LibeventServerTimer.h" />
+    <ClInclude Include="ServerTimer\SleepServerTimer.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <LibraryDependencies>event;pthread;rt</LibraryDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Base;..\OSWrapper;..\ServerFrame;..\ServerTimer;..\Logger;.\Base;.\OSWrapper;.\ServerFrame;.\v8;.\ServerTimer;.\Logger;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

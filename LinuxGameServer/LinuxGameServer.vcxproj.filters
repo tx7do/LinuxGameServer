@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OSWrapper\Path.cpp">
+      <Filter>OSWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="OSWrapper\Pipe.cpp">
+      <Filter>OSWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="OSWrapper\Process.cpp">
+      <Filter>OSWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="OSWrapper\SharedMemory.cpp">
+      <Filter>OSWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="OSWrapper\Thread.cpp">
+      <Filter>OSWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="OSWrapper\ThreadLocal.cpp">
+      <Filter>OSWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="OSWrapper\DirectoryIterator.cpp">
+      <Filter>OSWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="OSWrapper\Event.cpp">
+      <Filter>OSWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="OSWrapper\File.cpp">
+      <Filter>OSWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerFrame\Application.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerFrame\Configuration.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerFrame\OptionManager.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerFrame\Subsystem.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\ErrorHandler.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Format.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\NumberFormatter.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\NumberParser.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\RefCountedObject.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\StringTokenizer.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Timespan.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Timestamp.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Ascii.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\BaseException.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Bugcheck.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Debugger.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Error.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerFrame\ServerApplication.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\DateTimeFormatter.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\DateTimeFormat.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\DateTime.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\LocalDateTime.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\NumericString.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="OSWrapper\FPEnvironment.cpp">
+      <Filter>OSWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="OSWrapper\Timezone.cpp">
+      <Filter>OSWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerFrame\Option.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerFrame\OptionProcessor.cpp">
+      <Filter>ServerFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerTimer\LibeventServerTimer.cpp">
+      <Filter>ServerTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerTimer\ServerTimerCreator.cpp">
+      <Filter>ServerTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerTimer\SleepServerTimer.cpp">
+      <Filter>ServerTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerTimer\AsioServerTimer.cpp">
+      <Filter>ServerTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerTimer\EpollfdServerTimer.cpp">
+      <Filter>ServerTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger\Logger.cpp">
+      <Filter>Logger</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="OSWrapper">
+      <UniqueIdentifier>{d679f519-3fff-48f2-ad47-9aa5f5f4f3c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{edcbac21-092c-4e04-9b43-6bbabbace2fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerFrame">
+      <UniqueIdentifier>{655c8490-ba16-4755-849c-7137694abeeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\v8">
+      <UniqueIdentifier>{541b13b6-1b9c-46a2-a06f-db6b5440b9e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{11981808-d08a-46ea-8e35-aa4aabd3c112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerTimer">
+      <UniqueIdentifier>{7516f58c-f7be-423c-b111-4b573c5be73a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OSWrapper\File.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="OSWrapper\Path.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="OSWrapper\Pipe.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="OSWrapper\Process.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="OSWrapper\Runnable.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="OSWrapper\RunnableAdapter.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="OSWrapper\SharedMemory.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="OSWrapper\Thread.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="OSWrapper\ThreadLocal.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="OSWrapper\DirectoryIterator.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="OSWrapper\Event.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerFrame\Application.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerFrame\Configuration.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerFrame\OptionManager.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerFrame\Subsystem.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Error.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\ErrorHandler.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Format.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\MetaProgramming.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\NumberFormatter.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\NumberParser.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\RefCountedObject.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\SharedPtr.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\SingletonHolder.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\StringTokenizer.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Timespan.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Timestamp.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\TString.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Types.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Any.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Ascii.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\AutoPtr.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\BaseException.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Buffer.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Bugcheck.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Debugger.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerFrame\ServerApplication.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\DateTimeFormatter.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\DateTimeFormat.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\DateTime.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\LocalDateTime.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\NumericString.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\v8\cached-powers.h">
+      <Filter>Base\v8</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\v8\diy-fp.h">
+      <Filter>Base\v8</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\v8\double-conversion.h">
+      <Filter>Base\v8</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\v8\fast-dtoa.h">
+      <Filter>Base\v8</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\v8\fixed-dtoa.h">
+      <Filter>Base\v8</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\v8\ieee.h">
+      <Filter>Base\v8</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\v8\strtod.h">
+      <Filter>Base\v8</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\v8\utils.h">
+      <Filter>Base\v8</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\v8\bignum.h">
+      <Filter>Base\v8</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\v8\bignum-dtoa.h">
+      <Filter>Base\v8</Filter>
+    </ClInclude>
+    <ClInclude Include="OSWrapper\FPEnvironment.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="OSWrapper\Timezone.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Platform.h">
+      <Filter>OSWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerFrame\Option.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerFrame\OptionProcessor.h">
+      <Filter>ServerFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger\ILogger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerTimer\EpollfdServerTimer.h">
+      <Filter>ServerTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerTimer\IServerTimer.h">
+      <Filter>ServerTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerTimer\LibeventServerTimer.h">
+      <Filter>ServerTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerTimer\SleepServerTimer.h">
+      <Filter>ServerTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerTimer\AsioServerTimer.h">
+      <Filter>ServerTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger\Logger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
